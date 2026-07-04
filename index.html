@@ -3,198 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lisotech Digital | Client Dashboard Panel</title>
+    <title>Lisotech Digital | Active Client Portal</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 font-sans selection:bg-indigo-500 selection:text-white antialiased">
 
-    <div class="flex min-h-screen">
+    <!-- Global Application Navigation Bar -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-xs">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="bg-indigo-600 text-white p-2 rounded-lg font-bold tracking-wider text-sm shadow-md shadow-indigo-200">LD</div>
+                <span class="font-extrabold text-xl bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">Lisotech Digital</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
+                    <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span> Local Engine Online
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Marketing Hero Header -->
+    <header class="py-12 lg:py-16 bg-gradient-to-b from-indigo-50/50 via-white to-slate-50">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <span class="text-xs font-bold uppercase tracking-widest text-indigo-600 bg-indigo-50 px-3 py-1.5 rounded-full">Real-Time Social Acceleration</span>
+            <h1 class="text-3xl sm:text-5xl font-black text-slate-900 mt-4 tracking-tight leading-none">
+                Supercharge Your <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Facebook Reach</span> Instantly.
+            </h1>
+            <p class="mt-4 text-base sm:text-lg text-slate-500 max-w-2xl mx-auto font-normal leading-relaxed">
+                Build immediate social proof and trigger algorithmic growth via our active background processing pipeline.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Dynamic Application Workspace Layout Grid -->
+    <main class="max-w-6xl mx-auto px-4 py-4 grid lg:grid-cols-12 gap-8 items-start">
         
-        <!-- Left Sidebar Navigation -->
-        <aside class="w-64 bg-slate-900 text-slate-400 fixed h-full hidden md:flex flex-col justify-between z-30">
-            <div>
-                <!-- Brand Title Banner -->
-                <div class="h-16 flex items-center px-6 gap-2 border-b border-slate-800 bg-slate-950">
-                    <div class="bg-indigo-600 text-white p-1.5 rounded font-bold text-xs">LD</div>
-                    <span class="font-black text-white text-base tracking-tight">Lisotech Panel</span>
-                </div>
-                
-                <!-- Nav Links -->
-                <nav class="p-4 space-y-1">
-                    <a href="#" class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-bold bg-indigo-600 text-white transition">
-                        <i class="fa-solid fa-cart-plus text-base"></i> New Order
-                    </a>
-                    <a href="#" class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold hover:bg-slate-800 hover:text-white transition">
-                        <i class="fa-solid fa-list-check text-base"></i> Order History
-                    </a>
-                    <a href="#" class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold hover:bg-slate-800 hover:text-white transition">
-                        <i class="fa-solid fa-wallet text-base"></i> Add Funds
-                    </a>
-                    <a href="#" class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-semibold hover:bg-slate-800 hover:text-white transition">
-                        <i class="fa-solid fa-code text-base"></i> API Setup
-                    </a>
-                </nav>
+        <!-- Left Column: Interactive Panel Dashboard Form -->
+        <div class="lg:col-span-6 bg-white border border-slate-200 rounded-2xl p-6 shadow-xl shadow-slate-100 space-y-5">
+            <div class="border-b border-slate-100 pb-3">
+                <h3 class="font-extrabold text-lg text-slate-900 tracking-tight">Active SMM Payload Form</h3>
+                <p class="text-xs text-slate-400 mt-0.5">Submissions write parameters into the live execution framework.</p>
             </div>
-
-            <!-- Sidebar User Profile Banner -->
-            <div class="p-4 border-t border-slate-800 bg-slate-950/50 flex items-center justify-between">
-                <div class="flex items-center gap-2.5">
-                    <div class="h-8 w-8 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-xs border border-indigo-500/30">
-                        U
-                    </div>
-                    <div class="text-xs">
-                        <p class="font-bold text-slate-200">Active Client</p>
-                        <p class="text-slate-500">uid_774922</p>
-                    </div>
-                </div>
-                <a href="#" class="text-slate-500 hover:text-rose-400 transition"><i class="fa-solid fa-right-from-bracket"></i></a>
-            </div>
-        </aside>
-
-        <!-- Right Main Workspace Content Area -->
-        <main class="flex-1 md:pl-64 min-h-screen flex flex-col">
             
-            <!-- Top App Navbar Header Bar -->
-            <header class="h-16 bg-white border-b border-slate-200 sticky top-0 px-4 sm:px-8 flex items-center justify-between z-20">
-                <div class="flex items-center gap-4">
-                    <span class="text-xs font-bold text-slate-400 uppercase tracking-widest hidden sm:inline">Portal Terminal</span>
+            <!-- Category Dropdown Field -->
+            <div>
+                <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">1. Category Channel</label>
+                <select id="order-cat" onchange="updateServiceOptions()" class="w-full px-3.5 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-hidden focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition">
+                    <option value="Facebook - Free Engagement Boosters">Facebook - Target Engagement Boosters</option>
+                    <option value="Facebook - Premium Page Followers">Facebook - Premium Real Page Followers</option>
+                </select>
+            </div>
+
+            <!-- Precise Package Dropdown Field -->
+            <div>
+                <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">2. Service Package</label>
+                <select id="order-service" class="w-full px-3.5 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-hidden focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition"></select>
+            </div>
+
+            <!-- Target URL Destination String Input Box -->
+            <div>
+                <label for="order-link" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">3. Destination URL / Profile Link</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                        <i class="fa-solid fa-link text-sm"></i>
+                    </div>
+                    <input type="url" id="order-link" placeholder="https://facebook.com/your-target-asset" class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-hidden focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition placeholder:text-slate-400">
                 </div>
-                
-                <!-- Quick User Status Widgets -->
-                <div class="flex items-center gap-4">
-                    <div class="bg-indigo-50 border border-indigo-100 rounded-xl px-4 py-1.5 text-right">
-                        <span class="block text-[10px] uppercase font-bold text-indigo-400 tracking-wider">Account Balance</span>
-                        <span class="text-sm font-black text-indigo-700">$0.00 <span class="text-xs font-normal text-indigo-400">USD</span></span>
+            </div>
+
+            <!-- Volume Target Configuration Count Input Box -->
+            <div>
+                <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">4. Target Volume Count</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                        <i class="fa-solid fa-arrow-trend-up text-sm"></i>
                     </div>
+                    <input type="number" id="order-qty" value="100" min="10" max="5000" class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-hidden focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition">
                 </div>
-            </header>
+                <div class="flex justify-between text-[10px] text-slate-400 font-medium mt-1.5">
+                    <span>Min Limit: 10</span>
+                    <span>Max Limit: 5,000</span>
+                </div>
+            </div>
 
-            <!-- Workspace Dynamic Body Dashboard Grid -->
-            <div class="p-4 sm:p-8 grid lg:grid-cols-12 gap-8 flex-1 items-start">
-                
-                <!-- Primary Form Column Execution Core -->
-                <div class="lg:col-span-7 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-5">
-                    <div class="border-b border-slate-100 pb-3">
-                        <h2 class="font-extrabold text-lg text-slate-900 tracking-tight">Place Live Order Request</h2>
-                        <p class="text-xs text-slate-400 mt-0.5">Automated queue allocations assign execution strings instantly.</p>
-                    </div>
+            <!-- Action Pipeline Commit Button Trigger -->
+            <button id="submit-btn" onclick="dispatchLiveDatabaseOrder()" class="w-full bg-indigo-600 text-white font-bold py-3.5 rounded-xl hover:bg-indigo-700 transition shadow-md shadow-indigo-600/10 flex items-center justify-center gap-2 cursor-pointer text-sm">
+                <i class="fa-solid fa-satellite-dish text-sm"></i> Commit Order Queue Allocation
+            </button>
+        </div>
 
-                    <!-- Category Selector dropdown -->
+        <!-- Right Column: Real-time Terminal Log & Order Ledger -->
+        <div class="lg:col-span-6 space-y-6">
+            <!-- Active Debug Terminal Display Stream -->
+            <div class="bg-slate-900 text-slate-200 rounded-2xl p-4 border border-slate-950 shadow-md">
+                <div class="flex items-center gap-2 text-indigo-400 font-mono text-[10px] font-bold tracking-wider uppercase mb-2">
+                    <i class="fa-solid fa-terminal text-xs"></i> Pipeline Console Events
+                </div>
+                <div id="live-terminal-logs" class="font-mono text-[11px] leading-relaxed space-y-1.5 max-h-32 overflow-y-auto text-slate-400">
+                    <p class="text-slate-500">> Application database layers successfully initialized.</p>
+                    <p class="text-slate-500">> Standby: Awaiting pipeline configurations data parse...</p>
+                </div>
+            </div>
+
+            <!-- Real-Time Database Tracking Table -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm">
+                <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-3">
                     <div>
-                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Category Channel</label>
-                        <select id="order-cat" onchange="updateServiceOptions()" class="w-full px-3.5 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-hidden focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition">
-                            <option value="fb_growth">Facebook - Target Engagement Boosters</option>
-                            <option value="fb_premium">Facebook - Premium Real Page Followers</option>
-                        </select>
+                        <h4 class="font-extrabold text-sm text-slate-900">Live Infrastructure Registry</h4>
+                        <p class="text-[10px] text-slate-400">Updates live as operations clear data buffers.</p>
                     </div>
-
-                    <!-- Precise Package Selector dropdown -->
-                    <div>
-                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Service Package</label>
-                        <select id="order-service" class="w-full px-3.5 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-hidden focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition">
-                            <!-- Populated organically inside Javascript block -->
-                        </select>
-                    </div>
-
-                    <!-- Link Destination Input Box -->
-                    <div>
-                        <label for="order-link" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Destination URL / Profile Link</label>
-                        <input type="url" id="order-link" placeholder="https://facebook.com/your-target-point" class="w-full px-3.5 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-hidden focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition placeholder:text-slate-400">
-                    </div>
-
-                    <!-- Quantity Target Limit Range Box -->
-                    <div>
-                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Target Volume Count</label>
-                        <input type="number" id="order-qty" value="100" min="10" max="5000" class="w-full px-3.5 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-hidden focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition">
-                        <div class="flex justify-between text-[10px] text-slate-400 font-medium mt-1.5">
-                            <span>Min Entry Allowances: 10</span>
-                            <span>Max Session Entry Limit: 5,000</span>
-                        </div>
-                    </div>
-
-                    <!-- Action Pipeline Execute Button -->
-                    <button onclick="dispatchClientOrder()" class="w-full bg-indigo-600 text-white font-bold py-4 rounded-xl hover:bg-indigo-700 transition shadow-md shadow-indigo-600/10 flex items-center justify-center gap-2 cursor-pointer">
-                        <i class="fa-solid fa-bolt text-sm"></i> Commit Order Queue Allocation
+                    <button onclick="clearSystemRegistry()" class="text-[10px] text-rose-600 bg-rose-50 hover:bg-rose-100 font-bold px-2 py-1 rounded-md transition cursor-pointer">
+                        Clear Database
                     </button>
                 </div>
 
-                <!-- Right Information & Announcement Sidebar Column -->
-                <div class="lg:col-span-5 space-y-6">
-                    
-                    <!-- System Notification Bulletin card -->
-                    <div class="bg-slate-900 text-slate-200 rounded-2xl p-5 border border-slate-950 shadow-md">
-                        <div class="flex items-center gap-2 text-amber-400 font-bold text-xs tracking-wider uppercase mb-3">
-                            <i class="fa-solid fa-circle-exclamation animate-pulse"></i> System Service Bulletin
-                        </div>
-                        <h4 class="text-sm font-extrabold text-white">Free Developer Sandbox Active</h4>
-                        <p class="text-xs text-slate-400 mt-2 leading-relaxed font-mono">
-                            Welcome to the updated Lisotech Panel space. Package allocations are operating within developer routing modules, enabling zero-fee infrastructure deployment validations across target channels.
-                        </p>
-                    </div>
-
-                    <!-- Live Technical Specifications Readout Box -->
-                    <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm space-y-3">
-                        <h3 class="font-bold text-sm text-slate-900 border-b border-slate-100 pb-2">Technical Delivery Rules</h3>
-                        <div class="space-y-2.5 text-xs">
-                            <div class="flex justify-between">
-                                <span class="text-slate-400 font-medium">Link Status Check:</span>
-                                <span class="font-semibold text-emerald-600">Active Real-Time Parse</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-slate-400 font-medium">Average Start Latency:</span>
-                                <span class="font-semibold text-slate-700">Immediate (&lt; 2 Minutes)</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-slate-400 font-medium">Fulfillment Type:</span>
-                                <span class="font-semibold text-slate-700">Asynchronous Scraping Array</span>
-                            </div>
-                        </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-xs">
+                        <thead>
+                            <tr class="text-slate-400 border-b border-slate-100 font-semibold">
+                                <th class="pb-2 font-medium">Order Reference ID</th>
+                                <th class="pb-2 font-medium">Service Info</th>
+                                <th class="pb-2 font-medium text-right">Volume</th>
+                                <th class="pb-2 font-medium text-right">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="database-rows-container" class="divide-y divide-slate-50 font-medium text-slate-700">
+                            <!-- Populated Dynamically -->
+                        </tbody>
+                    </table>
+                    <div id="empty-state-notice" class="text-center py-6 text-slate-400 text-xs hidden">
+                        <i class="fa-solid fa-box-open text-lg block mb-1 text-slate-300"></i> No records inside local cluster array.
                     </div>
                 </div>
-
             </div>
+        </div>
+    </main>
 
-            <!-- Unified Footnotes Wrapper layout -->
-            <footer class="bg-white border-t border-slate-200 py-6 mt-auto">
-                <div class="max-w-6xl mx-auto px-4 text-center text-[11px] text-slate-400 font-medium">
-                    <p>&copy; 2026 Lisotech Digital &bull; Client Dashboard Framework Control Structure &bull; All rights reserved.</p>
-                </div>
-            </footer>
-        </main>
-    </div>
+    <!-- Global Layout Footer Component Block -->
+    <footer class="bg-white border-t border-slate-200 mt-16 py-6">
+        <div class="max-w-6xl mx-auto px-4 text-center text-[11px] text-slate-400 font-medium space-y-1">
+            <p>&copy; 2026 Lisotech Digital. All rights reserved.</p>
+            <p class="max-w-xl mx-auto opacity-75">Disclaimer: Lisotech Digital is an independent optimization entity and is not affiliated with Facebook or Meta Platforms, Inc.</p>
+        </div>
+    </footer>
 
-    <!-- Script Application Router Context Controller -->
+    <!-- Comprehensive Operational Data Pipeline Router Script Engine -->
     <script>
+        // 1. SERVICES DATA RESOURCE DICTIONARY
         const structurePackages = {
-            fb_growth: [
-                { id: "fbl_01", text: "Instant High-Retention Post Likes (Free Trial Node)" },
-                { id: "fbl_02", text: "Video Clip Views & Social Interactions Array" }
+            "Facebook - Free Engagement Boosters": [
+                "Instant High-Retention Post Likes (Free Trial Node)",
+                "Video Clip Views & Social Interactions Array"
             ],
-            fb_premium: [
-                { id: "fbf_01", text: "Organic Profile Page Followers (High-Refill Priority)" },
-                { id: "fbf_02", text: "Direct Group Active Membership Stream" }
+            "Facebook - Premium Page Followers": [
+                "Organic Profile Page Followers (High-Refill Priority)",
+                "Direct Group Active Membership Stream"
             ]
         };
 
         function updateServiceOptions() {
             const currentSelectedCategoryValue = document.getElementById('order-cat').value;
             const targetSelectElement = document.getElementById('order-service');
-            
             targetSelectElement.innerHTML = '';
             
-            structurePackages[currentSelectedCategoryValue].forEach(pkg => {
+            structurePackages[currentSelectedCategoryValue].forEach(pkgName => {
                 const elementOptionNodeInstance = document.createElement('option');
-                elementOptionNodeInstance.value = pkg.id;
-                elementOptionNodeInstance.innerText = pkg.text;
+                elementOptionNodeInstance.value = pkgName;
+                elementOptionNodeInstance.innerText = pkgName;
                 targetSelectElement.appendChild(elementOptionNodeInstance);
             });
         }
 
-        async function dispatchClientOrder() {
+        // 2. SYSTEM LOG ENGINE INTERFACE
+        function printLog(message, styleClass = "text-slate-400") {
+            const container = document.getElementById('live-terminal-logs');
+            const p = document.createElement('p');
+            p.className = styleClass;
+            p.innerHTML = `> [${new Date().toLocaleTimeString()}] ${message}`;
+            container.appendChild(p);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        // 3. PERSISTENT STORAGE CONTROLLER MATRIX
+        function getDatabaseRecords() {
+            const cachedObjectString = localStorage.getItem('lisotech_storage_vault');
+            return cachedObjectString ? JSON.parse(cachedObjectString) : [];
+        }
+
+        function saveDatabaseRecords(dataArray) {
+            localStorage.setItem('lisotech_storage_vault', JSON.stringify(dataArray));
+            renderTableRecords();
+        }
+
+        // 4. LIVE UI RENDERING CONTROLLER
+        function renderTableRecords() {
+            const records = getDatabaseRecords();
+            const container = document.getElementById('database-rows-container');
+            const emptyNotice = document.getElementById('empty-state-notice');
+            
+            container.innerHTML = '';
+            
+            if (records.length === 0) {
+                emptyNotice.classList.remove('hidden');
+                return;
+            }
+            emptyNotice.classList.add('hidden');
+
+            records.forEach(item => {
+                const row = document.createElement('tr');
+                row.className = "hover:bg-slate-50/50 transition-colors";
+                row.innerHTML = `
+                    <td class="py-2.5 font-mono text-[10px] text-slate-400 select-all">#${item.id}</td>
+                    <td class="py-2.5 max-w-[180px] truncate">
+                        <span class="block text-slate-800 font-semibold truncate">${item.service}</span>
+                        <span class="block text-[10px] text-slate-400 truncate">${item.url}</span>
+                    </td>
+                    <td class="py-2.5 text-right font-bold text-slate-900">${item.quantity.toLocaleString()}</td>
+                    <td class="py-2.5 text-right">
+                        <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold bg-amber-50 text-amber-700 border border-amber-200">
+                            <span class="h-1 w-1 rounded-full bg-amber-500 animate-pulse"></span> ${item.status}
+                        </span>
+                    </td>
+                `;
+                container.appendChild(row);
+            });
+        }
+
+        // 5. SECURE PIPELINE DATA DISPATCH ENGINE
+        function dispatchLiveDatabaseOrder() {
+            const cat = document.getElementById('order-cat').value;
+            const service = document.getElementById('order-service').value;
             const urlValue = document.getElementById('order-link').value.trim();
             const quantityCount = parseInt(document.getElementById('order-qty').value);
+            const btn = document.getElementById('submit-btn');
             
+            // Validations
             if(!urlValue || !urlValue.includes('facebook.com')) {
                 alert('Verification Failure: A valid Facebook URL profile reference string must be supplied.');
                 return;
@@ -204,12 +249,51 @@
                 return;
             }
 
-            alert(`Order Initialized Successfully!\n\nTarget Pipeline: ${urlValue}\nRequested Units Volume: ${quantityCount} Operations\n\nYour deployment task string has been attached directly to the network thread pools successfully.`);
-            document.getElementById('order-link').value = '';
+            // Lock application controls down immediately to visualize transmission lag
+            btn.disabled = true;
+            btn.innerText = "Transmitting Packet Stream...";
+            printLog(`Packaging payload metrics data schema configurations...`, 'text-indigo-400 font-semibold');
+
+            setTimeout(() => {
+                const activeVault = getDatabaseRecords();
+                
+                // Create a record structure object mimicry matching cloud tables
+                const newRecord = {
+                    id: Math.random().toString(36).substring(2, 7).toUpperCase(),
+                    category: cat,
+                    service: service,
+                    url: urlValue,
+                    quantity: quantityCount,
+                    status: 'Processing',
+                    timestamp: new Date().toISOString()
+                };
+
+                // Push record into Local Storage Cluster Array
+                activeVault.unshift(newRecord);
+                saveDatabaseRecords(activeVault);
+
+                printLog(`Fulfillment packet confirmed by data instance ledger table.`, 'text-emerald-400 font-bold');
+                
+                // Reset states smoothly
+                btn.disabled = false;
+                btn.innerText = "Commit Order Queue Allocation";
+                document.getElementById('order-link').value = '';
+                
+            }, 1200);
         }
 
-        // Run updates to populate forms smoothly on immediate screen load operations.
+        // 6. STORAGE PURGE HANDLER
+        function clearSystemRegistry() {
+            if(confirm('Are you sure you want to completely flush the active transaction ledger records?')) {
+                localStorage.removeItem('lisotech_storage_vault');
+                printLog(`System memory collection storage wiped clean.`, 'text-rose-400 font-semibold');
+                renderTableRecords();
+            }
+        }
+
+        // Auto initialization call scripts on document ready frame
         updateServiceOptions();
+        renderTableRecords();
     </script>
 </body>
 </html>
